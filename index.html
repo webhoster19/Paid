@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Food - Fast Delivery</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Welcome Page -->
+        <div id="welcome-page" class="page active">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h1>Good Food</h1>
+                <p>Fast Delivery at your doorstep</p>
+            </div>
+        </div>
+
+        <!-- Menu Page -->
+        <div id="menu-page" class="page">
+            <div class="header">
+                <h2>Our Menu</h2>
+                <div class="categories">
+                    <button class="category-btn active" data-category="burger">Burgers</button>
+                    <button class="category-btn" data-category="chicken">Chicken</button>
+                    <button class="category-btn" data-category="fish">Fish</button>
+                </div>
+            </div>
+            <div class="products-container">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Product Details Page -->
+        <div id="product-page" class="page">
+            <div class="product-details">
+                <div class="product-image">
+                    <img id="detail-product-img" src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h2 id="detail-product-name"></h2>
+                    <p id="detail-product-price"></p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-fire"></i>
+                            <span id="detail-product-calories"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="detail-product-time"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-weight-hanging"></i>
+                            <span id="detail-product-size"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Page -->
+        <div id="cart-page" class="page">
+            <div class="header">
+                <h2>Your Cart</h2>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="total-price">RM 0</span></p>
+            </div>
+        </div>
+
+        <!-- Order Confirmation Page -->
+        <div id="confirmation-page" class="page">
+            <div class="confirmation-container">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Order Successful!</h2>
+                <p>Your food is being prepared</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
